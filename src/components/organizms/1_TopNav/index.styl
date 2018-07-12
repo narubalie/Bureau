@@ -1,0 +1,92 @@
+@require '../../../assets/styles/config.styl'
+@require '../../../assets/styles/reset.styl'
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=cyrillic-ext');
+
+#topNav
+  position: fixed
+  background-color #273845
+  color white
+  width: 100%
+  height: 100px
+  display flex
+  flex-direction: row
+  justify-content: space-around
+
+#logoDropdown
+  display flex
+  flex-direction: row
+  align-items: center
+  width 20%
+
+.ic
+  display: block
+  height 36px
+  width: 36px
+  background no-repeat center url(../../../assets/elements/burger.svg)
+  background-size contain
+
+.Burger
+  margin-left: 16px
+
+.Logo
+  display: block
+  width: 210px
+  height 40px
+  background no-repeat center url(../../../assets/elements/NewFullLogo.svg)
+  background-size contain
+  margin: 0 0 6px 12px
+
+#navLinks
+  display flex
+  flex-direction: row
+  align-items: center
+
+#navLinks a
+  font-family: Source Sans Pro
+  font-style: normal
+  font-weight: 400;
+  font-size: 20px
+  letter-spacing: 0.03em
+  text-transform: none
+  text-decoration: none
+  padding: 10px
+  &:visited
+    color: $colors.third
+  &:hover
+    color: $colors.secondary
+  &:active
+    color: $colors.accident
+
+#searchBlock
+  display flex
+  flex-direction: row
+  align-items: center
+
+#search
+  font-family: Source Sans Pro
+  font-style: normal
+  font-weight: 400;
+  font-size: 20px
+  letter-spacing: 0.03em
+  background-color: transparent
+  border: none
+  outline: none
+  padding: 20px
+  &::placeholder
+    opacity: 1
+    color white
+  &:focus
+    color white
+    &::after
+      content:'';
+      position:absolute;
+      width: 100%;
+      height: 0;    
+      left:0;
+      bottom:1px; /*Change this to increase/decrease distance*/
+      border-bottom: 2px solid white; 
+    &::placeholder
+      opacity: 0.5
+
+  
+  

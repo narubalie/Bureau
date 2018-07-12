@@ -17,6 +17,7 @@
     "normalize.css": "^8.0.0",
     "vue": "^2.5.2",
     "vue-css-grid": "^1.0.1",
+    "vue-instantsearch": "^1.7.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
