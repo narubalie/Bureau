@@ -3,6 +3,8 @@ import App from './App'
 import router from './router'
 import store from './store'
 import InstantSearch from 'vue-instantsearch'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 import 'normalize.css/normalize.css'
 
@@ -24,6 +26,8 @@ Vue.component('viewport-listener', ViewportListener)
 Vue.config.productionTip = false
 
 Vue.use(InstantSearch)
+
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({

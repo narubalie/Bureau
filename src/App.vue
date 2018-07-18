@@ -20,6 +20,7 @@
   </div>
 </template>
 
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
 export default {
   name: 'App',

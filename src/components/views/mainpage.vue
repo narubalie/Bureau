@@ -37,10 +37,11 @@ export default {
       // 3x3 grid
       desktopGrid: {
         columns: ['20%', '60%', '20%'],
-        rows: ['100px', '90vh'],
+        rows: ['100px', '90vh', '90vh'],
         areas: [
           ['.', '.', '.'],
-          ['mainSlider', 'mainSlider', 'mainSlider']
+          ['mainSlider', 'mainSlider', 'mainSlider'],
+          ['servicesSlider', 'servicesSlider', 'servicesSlider']
         ]
       },
       // 2x4 grid

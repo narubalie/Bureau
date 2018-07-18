@@ -1,23 +1,17 @@
 import Vue from 'vue'
+import services from './modules/services/'
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
-    projects: [
-      {
-        id: 1,
-        name: 'Дентал Бюро',
-        // img: require('../assets/dentalbureau-cover.png'),
-        path: 'project/bureau',
-        description: 'Создание логотипа для стоматологической клиники'
-      }
-    ]
+export default {
+  namespaced: true,
+  strict: process.env.NODE_ENV !== 'production',
+  modules: {
+    services
   },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
-  }
-})
+  getters: {},
+  mutations: {},
+  actions: {},
+  plugins: {}
+}

@@ -1,6 +1,12 @@
 <template>
-  <css-grid-item>
-    <div id="servicesSlider"></div>
+  <css-grid-item id='servicesSlider' area="servicesSlider">
+    <div class="block">
+      <el-carousel trigger="click" height="calc(100vh - 100px)">
+        <el-carousel-item v-for="item in 4" :key="item">
+          <h3>{{ item }}</h3>
+        </el-carousel-item>
+      </el-carousel>
+    </div>
   </css-grid-item>
 </template>
 

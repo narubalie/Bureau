@@ -1,16 +1,44 @@
 <template>
   <css-grid-item id="topNav" area="topNav">
-    <div id="logoDropdown" area="logoDropdown">
-      <span class="Burger ic"></span>
-      <span class="Logo ic"></span>
-    </div>
-    <div id="navLinks">
-      <router-link to="Servises"><a>Услуги</a></router-link>
-      <router-link to="Specialists"><a>Специалисты</a></router-link>
-      <router-link to="Prices"><a>Цены</a></router-link>
-      <router-link to="Contacts"><a>Контакты</a></router-link>
-    </div>
+    <el-menu
+      :default-active="activeIndex"
+      class="el-menu-demo"
+      mode="horizontal"
+      @select="handleSelect"
+      background-color="#545c64"
+      text-color="#fff"
+      active-text-color="#ffd04b">
+      <el-menu-item index="1" id="logoDropdown" area="logoDropdown">
+        <span class="Burger ic"></span>
+        <span class="Logo ic"></span>
+      </el-menu-item>
+      <el-submenu index="2">
+        <template id="navLinks" slot="title"><router-link to="Servises"><a>Услуги</a></router-link></template>
+        <el-menu-item :v-for="service.sCategories in serviсes" :key="service.id" >
+          {{ service.store.category }}
+        </el-menu-item>
+        <!-- <el-menu-item index="2-1">item one</el-menu-item>
+        <el-menu-item index="2-2">item two</el-menu-item>
+        <el-menu-item index="2-3">item three</el-menu-item>
+        <el-submenu index="2-4">
+          <template slot="title">item four</template>
+          <el-menu-item index="2-4-1">item one</el-menu-item>
+          <el-menu-item index="2-4-2">item two</el-menu-item>
+          <el-menu-item index="2-4-3">item three</el-menu-item>
+        </el-submenu> -->
+      </el-submenu>
+      <el-menu-item index="3" disabled>
+        <router-link to="Specialists"><a>Специалисты</a></router-link>
+      </el-menu-item>
+      <el-menu-item index="4">
+        <router-link to="Prices"><a>Цены</a></router-link>
+      </el-menu-item>
+      <el-menu-item index="5">
+        <router-link to="Contacts"><a>Контакты</a></router-link>
+      </el-menu-item>
+    </el-menu>
     <div id="searchBlock">
+      <i class="el-icon-search"></i>
       <ais-input id="search" placeholder="Поиск..." autocomplete="on"></ais-input>
     </div>
   </css-grid-item>
