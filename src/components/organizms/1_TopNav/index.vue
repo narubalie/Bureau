@@ -14,7 +14,7 @@
       </el-menu-item>
       <el-submenu index="2">
         <template id="navLinks" slot="title"><router-link to="Servises"><a>Услуги</a></router-link></template>
-        <el-menu-item index="2-1">item one</el-menu-item>
+        <el-menu-item :v-for="service in services" index="2-1">item one</el-menu-item>
         <el-menu-item index="2-2">item two</el-menu-item>
         <el-menu-item index="2-3">item three</el-menu-item>
         <el-submenu index="2-4">

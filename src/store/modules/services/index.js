@@ -10,7 +10,7 @@ import orthodontics from './9_orthodontics.js'
 
 export default {
   namespaced: true,
-  services: {
+  state: {
     common,
     therapy,
     surgery,

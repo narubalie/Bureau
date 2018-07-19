@@ -1,4 +1,5 @@
-// import { mapState } from 'vuex'
+import { mapState } from 'vuex'
+// import store from '../../../store'
 
 export default {
   name: 'TopNav',
@@ -12,13 +13,8 @@ export default {
     handleSelect (key, keyPath) {
       console.log(key, keyPath)
     }
-  }
-  // computed: mapState({
-  //   const x = Object.values(state).reduce(
-  //     (categories, field) => {
-  //       const fieldCategories = field.filter(objN => objN.hasOwnProperty('category')).map(objN => objN.category)
-  //       return [...categories, ...fieldCategories]
-  //     }, []
-  //   )
-  // })
+  },
+  computed: mapState({
+    services: state => state.module.services
+  })
 }
