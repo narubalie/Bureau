@@ -1,4 +1,5 @@
 import { store, services } from '../../../store'
+import { mapState } from 'vuex'
 
 // const categories = Object.values(services).reduce(
 //   (categories) => {
@@ -23,8 +24,8 @@ export default {
     }
   },
   computed: {
-    categories () {
-      return this.$store.states['services/categories']
-    }
+    ...mapState({
+      categories: state => state.services['categories']
+    })
   }
 }
