@@ -7,9 +7,9 @@ import implantology from './6_implantology.js'
 import kids from './7_kids.js'
 import orthopedics from './8_ortopedics.js'
 import orthodontics from './9_orthodontics.js'
-import { mapState } from 'vuex'
 
 export default {
+  namespaced: true,
   services: {
     common,
     therapy,
@@ -21,12 +21,8 @@ export default {
     orthopedics,
     orthodontics
   },
-  computed: mapState({
-    sCategories: Object.values(this.store.services.states).reduce(
-      (categories, state) => {
-        const servicesCategories = state.filter(objN => objN.hasOwnProperty('category')).map(objN => objN.category)
-        return [...categories, ...servicesCategories]
-      }, []
-    )
-  })
+  getters: {},
+  mutations: {},
+  actions: {},
+  plugins: {}
 }
