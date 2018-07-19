@@ -1,3 +1,3 @@
 export default {
-  name: 'TopNav'
+  name: 'mainSlider'
 }
