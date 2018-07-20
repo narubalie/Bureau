@@ -1,7 +1,7 @@
 <template>
-  <css-grid-item>
+  <el-main>
     <div id="specialistSlider"></div>
-  </css-grid-item>
+  </el-main>
 </template>
 
 <script type="text/babel" src='./index.js'></script>

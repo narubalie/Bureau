@@ -1,5 +1,5 @@
 <template>
-  <css-grid-item id="topNav" area="topNav">
+  <el-header id="topNav" area="topNav">
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -8,10 +8,15 @@
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b">
-      <el-menu-item index="1" id="logoDropdown" area="logoDropdown">
-        <span class="Burger ic"></span>
-        <span class="Logo ic"></span>
-      </el-menu-item>
+      <el-submenu index="1" id="logoDropdown" area="logoDropdown">
+        <template slot="title">
+          <span class="Burger ic"></span>
+          <span class="Logo ic"></span>
+        </template>
+        <el-menu-item index="1-1">item one</el-menu-item>
+        <el-menu-item index="1-2">item two</el-menu-item>
+        <el-menu-item index="1-3">item three</el-menu-item>
+      </el-submenu>
       <el-submenu index="2">
         <template id="navLinks" slot="title"><router-link to="Servises"><a>Услуги</a></router-link></template>
         <el-menu-item v-for="(service, i) in services" :key="i" index="2-1">item one</el-menu-item>
@@ -36,9 +41,9 @@
     </el-menu>
     <div id="searchBlock">
       <i class="el-icon-search"></i>
-      <ais-input id="search" placeholder="Поиск..." autocomplete="on"></ais-input>
+      <input>
     </div>
-  </css-grid-item>
+  </el-header>
 </template>
 
 <script type="text/babel" src='./index.js'></script>

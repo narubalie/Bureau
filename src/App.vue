@@ -1,22 +1,7 @@
 <template>
   <div id="app">
-    <ais-index app-id="appId" api-key="apiKey" index-name="indexName">
-      <ais-search-box>
-        <topNav></topNav>
-        <router-view></router-view>
-      </ais-search-box>
-      <ais-results>
-        <template slot-scope="{ result }">
-          <h2>
-            <a :href="result.url">
-              {{ result.title }}
-            </a>
-          </h2>
-          <p>{{ result.description }}</p>
-        </template>
-      </ais-results>
-      <ais-pagination></ais-pagination>
-    </ais-index>
+    <topNav></topNav>
+    <router-view></router-view>
   </div>
 </template>
 

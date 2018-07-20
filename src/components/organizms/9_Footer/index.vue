@@ -1,7 +1,7 @@
 <template>
-  <css-grid-item>
+  <el-footer>
     <div id="footer"></div>
-  </css-grid-item>
+  </el-footer>
 </template>
 
 <script type="text/babel" src='./index.js'></script>

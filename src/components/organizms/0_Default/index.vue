@@ -1,7 +1,7 @@
 <template>
-  <css-grid-item>
+  <el-row>
     
-  </css-grid-item>
+  </el-row>
 </template>
 
 <script type="text/babel" src='./index.js'></script>
