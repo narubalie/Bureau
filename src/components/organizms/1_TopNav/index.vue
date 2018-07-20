@@ -1,24 +1,22 @@
 <template>
-  <el-header id="topNav" area="topNav">
+  <el-header id="topNav">
     <el-menu
       :default-active="activeIndex"
+      active-text-color="#89b0ae"
+      background-color="#273845"
+      text-color="#ffffff"
       class="el-menu-demo"
       mode="horizontal"
-      @select="handleSelect"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#ffd04b">
-      <el-submenu index="1" id="logoDropdown" area="logoDropdown">
+      @select="handleSelect">
+      <el-submenu index="#">
         <template slot="title">
           <span class="Burger ic"></span>
           <span class="Logo ic"></span>
         </template>
         <el-menu-item index="1-1">item one</el-menu-item>
-        <el-menu-item index="1-2">item two</el-menu-item>
-        <el-menu-item index="1-3">item three</el-menu-item>
       </el-submenu>
       <el-submenu index="2">
-        <template id="navLinks" slot="title"><router-link to="Servises"><a>Услуги</a></router-link></template>
+        <template id="navLinks" slot="title"><a>Услуги</a></template>
         <el-menu-item v-for="(service, i) in services" :key="i" index="2-1">item one</el-menu-item>
         <el-menu-item index="2-2">item two</el-menu-item>
         <el-menu-item index="2-3">item three</el-menu-item>
@@ -29,7 +27,7 @@
           <el-menu-item index="2-4-3">item three</el-menu-item>
         </el-submenu>
       </el-submenu>
-      <el-menu-item index="3" disabled>
+      <el-menu-item index="3">
         <router-link to="Specialists"><a>Специалисты</a></router-link>
       </el-menu-item>
       <el-menu-item index="4">
@@ -38,11 +36,11 @@
       <el-menu-item index="5">
         <router-link to="Contacts"><a>Контакты</a></router-link>
       </el-menu-item>
+      <el-menu-item index="6">
+        <i class="el-icon-search"></i>
+        <input>
+      </el-menu-item>
     </el-menu>
-    <div id="searchBlock">
-      <i class="el-icon-search"></i>
-      <input>
-    </div>
   </el-header>
 </template>
 

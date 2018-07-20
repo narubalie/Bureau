@@ -2,47 +2,33 @@
 @require '../../../assets/styles/reset.styl'
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=cyrillic-ext');
 
-#topNav
+.el-header
   z-index: 3
   position: fixed
-  background-color #273845
   color white
-  width: 100%
-  height: 100px
-  display flex
-  flex-direction: row
-  justify-content: space-around
+  width 100vw
 
-#logoDropdown
-  display flex
-  flex-direction: row
-  align-items: center
-  width 20%
+.el-menu-demo
+  display: flex
+  justify-content: center
 
 .ic
-  display: block
+  display: inline-block
   height 36px
   width: 36px
   background no-repeat center url(../../../assets/elements/burger.svg)
   background-size contain
-
-.Burger
-  margin-left: 16px
+  margin-top: 5px
 
 .Logo
-  display: block
+  display: inline-block
   width: 210px
   height 40px
   background no-repeat center url(../../../assets/elements/NewFullLogo.svg)
   background-size contain
-  margin: 0 0 6px 12px
+  margin-left 16px
 
-#navLinks
-  display flex
-  flex-direction: row
-  align-items: center
-
-#navLinks a
+.el-submenu a, .el-menu-item a
   font-family: Source Sans Pro
   font-style: normal
   font-weight: 400;
@@ -51,12 +37,6 @@
   text-transform: none
   text-decoration: none
   padding: 10px
-  &:visited
-    color: $colors.third
-  &:hover
-    color: $colors.secondary
-  &:active
-    color: $colors.accident
 
 #searchBlock
   display flex
@@ -88,6 +68,3 @@
       border-bottom: 2px solid white; 
     &::placeholder
       opacity: 0.5
-
-  
-  

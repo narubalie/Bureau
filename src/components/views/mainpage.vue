@@ -1,13 +1,13 @@
 <template>
   <el-container>
     <MainSlider></MainSlider>
-    <ServicesSlider area="servicesSlider"></ServicesSlider>
-    <SeoBlock area="seoBlock"></SeoBlock>
-    <VideoBlock area="videoBlock"></VideoBlock>
-    <SpecialistSlider area="specialistSlider"></SpecialistSlider>
-    <BlogBlock area="blogBlock"></BlogBlock>
-    <ReplySlider area="replySlider"></ReplySlider>
-    <Footer area="footer"></Footer>
+    <ServicesSlider></ServicesSlider>
+    <SeoBlock></SeoBlock>
+    <VideoBlock></VideoBlock>
+    <SpecialistSlider></SpecialistSlider>
+    <BlogBlock></BlogBlock>
+    <ReplySlider></ReplySlider>
+    <Footer></Footer>
   </el-container>
 </template>
 
@@ -34,4 +34,14 @@ export default {
 </script>
 
 <style>
+  .el-container {
+    flex-direction: column
+  }
+  .el-row {
+    width: 1200px;
+    margin: 0 auto
+  }
+  .el-main {
+    padding: 0
+  }
 </style>

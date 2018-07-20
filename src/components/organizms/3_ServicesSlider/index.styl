@@ -1,5 +1,12 @@
 @require '../../../assets/styles/config.styl'
 
+.el-row {
+  height: 75vh
+  display: flex
+  align-items: center
+  justify-content: center
+}
+
 .el-carousel__item h3 {
   color: #fff;
   font-size: 14px;
@@ -8,37 +15,10 @@
   margin: 0;
 }
 
-.serviceCover {
-  margin-top: 200px
-  height 500px
-}
-
-.time {
-    font-size: 13px;
-    color: #999;
+.el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
   }
-  
-.bottom {
-  margin-top: 13px;
-  line-height: 12px;
-}
 
-.button {
-  padding: 0;
-  float: right;
-}
-
-.image {
-  width: 100%;
-  display: block;
-}
-
-.clearfix:before,
-.clearfix:after {
-    display: table;
-    content: "";
-}
-
-.clearfix:after {
-    clear: both
+.el-carousel__item:nth-child(2n+1) {
+  background-color: #d3dce6;
 }

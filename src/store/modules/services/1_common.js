@@ -4,6 +4,8 @@ export default {
     id: 'ОБ1000',
     isActive: true,
     category: 'Проведение обследования',
+    smText: 'Первичный прием врача-стоматолога (осмотр, сбор анамнеза, постановка диагноза, оформление документации)',
+    cover: require('../../../assets/elements/serviceCover-1.png'),
     billedServices: [
       {
         id: 'ОБ0001',
@@ -36,6 +38,8 @@ export default {
     id: 'ОБ2000',
     isActive: true,
     category: 'Консультации',
+    smText: 'Первичный прием врача-стоматолога (осмотр, сбор анамнеза, постановка диагноза, оформление документации)',
+    cover: require('../../../assets/elements/serviceCover-2.png'),
     billedServices: [{
       id: 'ОБ0007',
       name: 'Консультация заведующего отделением и оформление консультативного заключения',
@@ -51,6 +55,8 @@ export default {
     id: 'ОБ3000',
     isActive: true,
     category: 'Анестезия',
+    smText: 'Первичный прием врача-стоматолога (осмотр, сбор анамнеза, постановка диагноза, оформление документации)',
+    cover: require('../../../assets/elements/serviceCover-3.png'),
     billedServices: [{
       id: 'ОБ0009',
       name: 'Аппликационная анестезия',
