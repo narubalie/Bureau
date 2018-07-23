@@ -1,3 +1,8 @@
+import Parallax from 'vue-parallaxy'
+
 export default {
-  name: 'TopNav'
+  components: {
+    Parallax
+  },
+  name: 'seoBlock'
 }

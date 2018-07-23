@@ -1,18 +1,9 @@
-<template>
-  <el-main id='servicesSlider'>
-    <el-row class="block">
-      <el-carousel
-      arrow="never"
-      trigger="click"
-      type="card"
-      :interval="8000"
-      height="45vh">
-        <el-carousel-item v-for="item in 6" :key="item">
-          <h3>{{ item }}</h3>
-        </el-carousel-item>
-      </el-carousel>
-    </el-row>
-  </el-main>
+<template lang='pug'>
+  el-main#servicesSlider
+    el-row.block
+      el-carousel(arrow="never" trigger="click" type="card" :interval="8000" height="45vh")
+        el-carousel-item(v-for="item in 6" :key="item")
+          h3 {{ item }}
 </template>
 
 <script type="text/babel" src='./index.js'></script>

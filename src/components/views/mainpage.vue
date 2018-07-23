@@ -1,17 +1,16 @@
-<template>
-  <el-container>
-    <MainSlider></MainSlider>
-    <ServicesSlider></ServicesSlider>
-    <SeoBlock></SeoBlock>
-    <VideoBlock></VideoBlock>
-    <SpecialistSlider></SpecialistSlider>
-    <BlogBlock></BlogBlock>
-    <ReplySlider></ReplySlider>
-    <Footer></Footer>
-  </el-container>
+<template lang="pug">
+  el-container
+    MainSlider
+    ServicesSlider
+    SeoBlock
+    SpecialistSlider
+    BlogBlock
+    ReplySlider
+    Footer
 </template>
 
 <script>
+
 export default {
   name: 'Mainpage',
   components: {
@@ -33,12 +32,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
   .el-container {
     flex-direction: column
   }
   .el-row {
-    width: 1200px;
+    width: 74vw;
     margin: 0 auto
   }
   .el-main {

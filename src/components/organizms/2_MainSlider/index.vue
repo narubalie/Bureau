@@ -1,15 +1,13 @@
-<template>
-  <el-main id='mainSlider'>
-    <el-row class="block">
-      <el-carousel
-      height="75vh"
-      trigger="click">
-        <el-carousel-item v-for="item in 4" :key="item">
-          <h3>{{ item }}</h3>
-        </el-carousel-item>
-      </el-carousel>
-    </el-row>
-  </el-main>
+<template lang='pug'>
+  el-main#mainSlider
+    el-row.block
+      el-carousel(
+        height='75vh',
+        trigger='click'
+        )
+        el-carousel-item(v-for='item in 4', :key='item')
+          h1 {{ item.text }}
+          div
 </template>
 
 <script type="text/babel" src='./index.js'></script>

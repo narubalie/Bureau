@@ -1,7 +1,7 @@
-<template>
-  <el-main>
-    <div id="videoBlock"></div>
-  </el-main>
+<template lang='pug'>
+  el-main#videoBlock
+    el-row.block
+      img(src="../../../assets/elements/DSC_7889.jpg")
 </template>
 
 <script type="text/babel" src='./index.js'></script>
