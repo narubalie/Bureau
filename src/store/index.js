@@ -8,9 +8,10 @@ import kids from './modules/services/7_kids.js'
 import orthopedics from './modules/services/8_ortopedics.js'
 import orthodontics from './modules/services/9_orthodontics.js'
 
-const services = {
+export default {
+  strict: process.env.NODE_ENV !== 'production',
   namespaced: true,
-  state: {
+  modules: {
     common,
     therapy,
     surgery,
@@ -20,12 +21,7 @@ const services = {
     kids,
     orthopedics,
     orthodontics
-  }
-}
-
-export default {
-  strict: process.env.NODE_ENV !== 'production',
-  modules: { services },
+  },
   getters: {},
   mutations: {},
   actions: {},
