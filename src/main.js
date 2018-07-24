@@ -1,24 +1,31 @@
 import Vue from 'vue'
-import App from './App'
-import router from './router'
-import store from './store'
+import VueRouter from 'vue-router'
+import Vuex from 'vuex'
+
+import routerConfig from './router'
+import storeConfig from './store'
+
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
 import 'normalize.css/normalize.css'
+
+import App from './App'
+
+Vue.use(VueRouter)
+Vue.use(Vuex)
+Vue.use(ElementUI)
+
+const router = new VueRouter(routerConfig)
+const store = new Vuex.Store(storeConfig)
 
 Vue.config.productionTip = false
 
-Vue.use(ElementUI)
-
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
   store,
+  el: '#app',
   render: h => h(App),
-  components: {
-    App
-  },
-  template: '<App/>'
+  template: '<App/>',
+  components: {App}
 })

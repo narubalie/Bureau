@@ -1,5 +1,3 @@
-import { store, services } from '../../../store'
-import { mapState } from 'vuex'
 // import router from '../../../router'
 
 // const categories = Object.values(services).reduce(
@@ -11,11 +9,17 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'Footer',
-  data () {
-    return {
-      store,
-      services
+  props: {
+    services: {
+      type: Array,
+      required: true
     }
   },
-  methods: {}
+  data () {
+    return {
+    }
+  },
+  computed: {},
+  methods: {},
+  mounted () {}
 }
