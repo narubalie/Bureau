@@ -1,13 +1,16 @@
 <template lang='pug'>
   el-footer
     el-button
-    el-card.box-card(
-    v-for='service in services'
-    :key="service.id"
+    el-card(
+    v-for='item in services'
+    :key='item.id'
     )
-      h3 {{service.state}}
-      a(v-for='category in service.state' :key='service.state.id')
-        | {{service.state.category}}
+      h2 {{ item.name }}
+      el-card.links(
+        v-for='items in item'
+        :key='item.id'
+        )
+          h3 {{ item.category }}
 </template>
 
 <script type="text/babel" src='./index.js'></script>

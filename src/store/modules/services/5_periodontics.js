@@ -3,34 +3,84 @@ export default {
   state: [
     {
       isActive: true,
-      billedServices: [
-        {
-          name: 'Консультация врача-стоматолога-пародонтолога и оформление консультативного заключения',
-          price: '1500.00'
-        }]
+      billedServices: [{
+        art: 'Т0001',
+        name: 'Консультация врача-стоматолога-терапевта и оформление консультативного заключения',
+        price: '500.00'
+      }]
     }, {
+      id: 27000,
+      category: 'Консервативное лечение',
       isActive: true,
-      category: 'Консервативное лечение'
+      cover: require('../../../assets/elements/serviceCover-2.png'),
+      billedServices: [{
+        key: 'Т0007',
+        name: 'Постановка пломбы светового отверждения из материала группы высшей категории по поводу кариеса 1-2 пов.',
+        price: '1850.00'
+      }]
     }, {
-      isActive: true,
+      id: 28000,
       category: 'Операции',
-      description: 'без стоимости анестезии, шовных материалов и восстановления костного деффекта'
-    }, {
       isActive: true,
-      category: 'Наложение швов'
+      cover: require('../../../assets/elements/serviceCover-2.png'),
+      description: 'без стоимости анестезии, шовных материалов и восстановления костного деффекта',
+      billedServices: [{
+        art: 'Т0012',
+        name: 'Услуга',
+        price: '100.00'
+      }]
     }, {
+      id: 29000,
+      category: 'Наложение швов',
       isActive: true,
-      category: 'Восстановление костного дефекта'
+      cover: require('../../../assets/elements/serviceCover-2.png'),
+      billedServices: [{
+        art: 'Т0025',
+        name: 'Услуга',
+        price: '100.00'
+      }]
     }, {
+      id: 30000,
+      category: 'Восстановление костного дефекта',
       isActive: true,
-      category: 'Шинирование'
+      cover: require('../../../assets/elements/serviceCover-2.png'),
+      billedServices: [{
+        art: 'Т0012',
+        name: 'Услуга',
+        price: '100.00'
+      }]
     }, {
+      id: 31000,
+      category: 'Шинирование',
       isActive: true,
-      category: 'Прочее'
+      cover: require('../../../assets/elements/serviceCover-2.png'),
+      billedServices: [{
+        art: 'Т0025',
+        name: 'Услуга',
+        price: '100.00'
+      }]
     }, {
+      id: 32000,
+      category: 'Прочее',
       isActive: true,
-      category: 'Лечение слизистой оболочки полости рта'
-    }],
+      cover: require('../../../assets/elements/serviceCover-2.png'),
+      billedServices: [{
+        key: 'Т0007',
+        name: 'Постановка пломбы светового отверждения из материала группы высшей категории по поводу кариеса 1-2 пов.',
+        price: '1850.00'
+      }]
+    }, {
+      id: 33000,
+      category: 'Лечение слизистой оболочки полости рта',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png'),
+      billedServices: [{
+        art: 'Т0012',
+        name: 'Услуга',
+        price: '100.00'
+      }]
+    }
+  ],
   getters: {},
   mutations: {},
   actions: {},

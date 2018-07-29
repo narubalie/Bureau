@@ -1,70 +1,8 @@
 @require '../../../assets/styles/config.styl'
 @require '../../../assets/styles/reset.styl'
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=cyrillic-ext');
 
-.el-header
-  z-index: 3
-  position: fixed
-  color white
-  width 100%
+a
+  color: $colors.primary
 
-.el-menu-demo
-  display: flex
-  justify-content: center
-
-.ic
-  display: inline-block
-  height 36px
-  width: 36px
-  background no-repeat center url(../../../assets/elements/burger.svg)
-  background-size contain
-  margin-top: 5px
-
-.Logo
-  display: inline-block
-  width: 210px
-  height 40px
-  background no-repeat center url(../../../assets/elements/NewFullLogo.svg)
-  background-size contain
-  margin-left 16px
-
-.el-submenu a, .el-menu-item a
-  font-family: Source Sans Pro
-  font-style: normal
-  font-weight: 400;
-  font-size: 20px
-  letter-spacing: 0.03em
-  text-transform: none
-  text-decoration: none
-  padding: 10px
-
-#searchBlock
-  display flex
-  flex-direction: row
-  align-items: center
-
-#search
-  font-family: Source Sans Pro
-  font-style: normal
-  font-weight: 400;
-  font-size: 20px
-  letter-spacing: 0.03em
-  background-color: transparent
-  border: none
-  outline: none
-  padding: 20px
-  &::placeholder
-    opacity: 1
-    color white
-  &:focus
-    color white
-    &::after
-      content:'';
-      position:absolute;
-      width: 100%;
-      height: 0;    
-      left:0;
-      bottom:1px; /*Change this to increase/decrease distance*/
-      border-bottom: 2px solid white; 
-    &::placeholder
-      opacity: 0.5
+.links
+  width: 200px

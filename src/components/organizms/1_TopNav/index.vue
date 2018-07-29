@@ -9,7 +9,7 @@
         el-submenu(index="2")
           template#navLinks(slot="title")
             a Услуги
-          el-menu-item(v-for="(service, i) in services" :key="i" index="2-1") item one
+          el-menu-item(index="2-1") item one
           el-menu-item(index="2-2") item two
           el-menu-item(index="2-3") item three
           el-submenu(index="2-4")

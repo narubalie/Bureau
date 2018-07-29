@@ -6,7 +6,9 @@
     SpecialistSlider
     BlogBlock
     ReplySlider
-    Footer
+    Footer(
+      :services='services'
+      )
 </template>
 
 <script>
@@ -23,11 +25,13 @@ export default {
     Footer: resolve => require(['../organizms/9_Footer/index.vue'], resolve)
   },
   data () {
-    return {
-      // logo: require('./assets/logo-narubalie.svg')
-    }
+    return {}
   },
-  computed: {}
+  computed: {
+    services () {
+      return this.$store.state.services
+    }
+  }
 }
 </script>
 

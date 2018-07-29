@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 
 import routerConfig from './router'
-// import storeConfig from './store'
+import storeConfig from './store'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -16,14 +16,14 @@ Vue.use(Vuex)
 Vue.use(ElementUI)
 
 const router = new VueRouter(routerConfig)
-// const store = new Vuex.Store(storeConfig)
+const store = new Vuex.Store(storeConfig)
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   router,
-  // store,
+  store,
   el: '#app',
   render: h => h(App),
   template: '<App/>',
