@@ -1,6 +1,6 @@
 export default {
-  namespaced: true,
-  state: [
+  name: 'Терапия',
+  data: [
     {
       isActive: true,
       billedServices: [{
@@ -364,9 +364,5 @@ export default {
         price: '1850.00'
       }]
     }
-  ],
-  getters: {},
-  mutations: {},
-  actions: {},
-  plugins: {}
+  ]
 }

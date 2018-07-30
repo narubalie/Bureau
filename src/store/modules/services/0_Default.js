@@ -1,9 +1,6 @@
 export default {
   namespaced: true,
-  state: [{
-    implantology: '270.00',
-    else: '111'
-  }],
+  state: [],
   getters: {},
   mutations: {},
   actions: {},

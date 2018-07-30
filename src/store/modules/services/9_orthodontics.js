@@ -1,6 +1,6 @@
 export default {
-  namespaced: true,
-  state: [
+  name: 'Ортодонтия',
+  data: [
     {
       name: 'Снятие зубных отложений с 1 зуба, имплантата',
       price: '270.00'
@@ -11,9 +11,5 @@ export default {
       name: 'Наложение лечебной повязки',
       price: '270.00'
     }
-  ],
-  getters: {},
-  mutations: {},
-  actions: {},
-  plugins: {}
+  ]
 }

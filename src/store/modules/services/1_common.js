@@ -1,7 +1,8 @@
 export default {
-  namespaced: true,
-  state: [
-    { id: 1000,
+  name: 'Общие',
+  data: [
+    {
+      id: 1000,
       category: 'Проведение обследования',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-1.png'),
@@ -31,8 +32,7 @@ export default {
         name: 'Профилактический осмотр врача-стоматолога',
         price: '460.00'
       }]
-    },
-    {
+    }, {
       id: 2000,
       category: 'Консультации',
       isActive: true,
@@ -46,8 +46,8 @@ export default {
         name: 'Совместная консультация заведующих стоматологическим и ортопедическим отделениями',
         price: '1000.00'
       }]
-    },
-    { id: 3000,
+    }, {
+      id: 3000,
       category: 'Анестезия',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-2.png'),
@@ -72,8 +72,8 @@ export default {
         name: 'Наложение жидкого коффердама (LiquidDam)',
         price: '250.00'
       }]
-    },
-    { id: 4000,
+    }, {
+      id: 4000,
       category: 'Рентгенография',
       isActive: false,
       cover: require('../../../assets/elements/serviceCover-2.png'),
@@ -104,9 +104,5 @@ export default {
         price: '300.00'
       }]
     }
-  ],
-  getters: {},
-  mutations: {},
-  actions: {},
-  plugins: {}
+  ]
 }

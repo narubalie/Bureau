@@ -1,6 +1,6 @@
 export default {
-  namespaced: true,
-  state: [
+  name: 'Парадонтология',
+  data: [
     {
       isActive: true,
       billedServices: [{
@@ -80,9 +80,5 @@ export default {
         price: '100.00'
       }]
     }
-  ],
-  getters: {},
-  mutations: {},
-  actions: {},
-  plugins: {}
+  ]
 }

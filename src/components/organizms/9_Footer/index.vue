@@ -7,10 +7,10 @@
     )
       h2 {{ item.name }}
       el-card.links(
-        v-for='items in item'
+        v-for='items in item.data'
         :key='item.id'
         )
-          h3 {{ item.category }}
+          h3 {{ item.data.category }}
 </template>
 
 <script type="text/babel" src='./index.js'></script>
