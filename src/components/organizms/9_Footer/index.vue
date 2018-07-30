@@ -2,15 +2,15 @@
   el-footer
     el-button
     el-card(
-    v-for='item in services'
-    :key='item.id'
+    v-for='service in services'
+    :key='service.id'
     )
-      h2 {{ item.name }}
+      h2 {{ service.name }}
       el-card.links(
-        v-for='items in item.data'
+        v-for='item in service.data'
         :key='item.id'
         )
-          h3 {{ item.data.category }}
+          h3 {{ item.category }}
 </template>
 
 <script type="text/babel" src='./index.js'></script>
