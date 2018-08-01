@@ -6,9 +6,7 @@
     SpecialistSlider
     BlogBlock
     ReplySlider
-    Footer(
-      :services='services'
-      )
+    Footer(:services='services')
 </template>
 
 <script>

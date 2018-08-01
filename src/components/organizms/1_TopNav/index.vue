@@ -1,22 +1,32 @@
 <template lang='pug'>
   el-header#topNav
-      el-menu.el-menu-demo(:default-active="activeIndex" active-text-color="#89b0ae" background-color="#273845" text-color="#ffffff" mode="horizontal" @select="handleSelect")
-        el-submenu(index="#")
+      el-menu.el-menu-demo(
+        :default-active="activeIndex"
+        active-text-color="#89b0ae"
+        background-color="#273845"
+        text-color="#ffffff"
+        mode="horizontal"
+        @select="handleSelect")
+        el-submenu(index="1")
           template(slot="title")
             span.Burger.ic
             span.Logo.ic
-          el-menu-item(index="1-1") item one
+          el-menu-item(index="1-1")
         el-submenu(index="2")
           template#navLinks(slot="title")
             a Услуги
-          el-menu-item(index="2-1") item one
-          el-menu-item(index="2-2") item two
-          el-menu-item(index="2-3") item three
-          el-submenu(index="2-4")
-            template(slot="title") item four
-            el-menu-item(index="2-4-1") item one
-            el-menu-item(index="2-4-2") item two
-            el-menu-item(index="2-4-3") item three
+          el-submenu(
+            v-for='service in services'
+            :key='service.id'
+            index="service.id"
+            )
+            template(slot="title")
+              h2 {{ service.name }}
+            el-menu-item.links(
+              v-for='item in service.data'
+              :key='item.id'
+              )
+              a {{ item.category }}
         el-menu-item(index="3")
           router-link(to="Specialists")
             a Специалисты

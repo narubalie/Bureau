@@ -1,8 +1,7 @@
-<template>
-  <div id="app">
-    <topNav></topNav>
-    <router-view></router-view>
-  </div>
+<template lang='pug'>
+  #app
+    TopNav(:services='services')
+    router-view
 </template>
 
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
@@ -11,6 +10,11 @@ export default {
   name: 'App',
   components: {
     TopNav: resolve => require(['./components/organizms/1_TopNav/index.vue'], resolve)
+  },
+  computed: {
+    services () {
+      return this.$store.state.services
+    }
   }
 }
 </script>

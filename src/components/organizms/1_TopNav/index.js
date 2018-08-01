@@ -9,6 +9,12 @@
 
 export default {
   name: 'TopNav',
+  props: {
+    services: {
+      type: Array,
+      required: true
+    }
+  },
   data () {
     return {
       activeIndex: '1',
