@@ -18,13 +18,14 @@
           el-submenu(
             v-for='service in services'
             :key='service.id'
-            index="service.id"
+            index="2-1"
             )
             template(slot="title")
               h2 {{ service.name }}
             el-menu-item.links(
               v-for='item in service.data'
               :key='item.id'
+              index="2-1-1"
               )
               a {{ item.category }}
         el-menu-item(index="3")

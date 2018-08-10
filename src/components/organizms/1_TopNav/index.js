@@ -17,8 +17,7 @@ export default {
   },
   data () {
     return {
-      activeIndex: '1',
-      activeIndex2: '2'
+      activeIndex: '1'
     }
   },
   methods: {

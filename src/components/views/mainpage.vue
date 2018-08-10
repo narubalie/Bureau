@@ -1,7 +1,7 @@
 <template lang="pug">
   el-container
     MainSlider
-    ServicesSlider
+    ServicesSlider(:common='common')
     SeoBlock
     SpecialistSlider
     BlogBlock
@@ -28,6 +28,9 @@ export default {
   computed: {
     services () {
       return this.$store.state.services
+    },
+    common () {
+      return this.$store.state.services.filter(item => item.name === 'Общие')
     }
   }
 }
