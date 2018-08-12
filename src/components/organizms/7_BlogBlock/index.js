@@ -1,10 +1,6 @@
-import Parallax from 'vue-parallaxy'
 
 export default {
   name: 'blogBlock',
-  components: {
-    Parallax
-  },
   data () {
     return {
       item: {

@@ -1,7 +1,7 @@
 <template lang="pug">
   el-container
     MainSlider
-    ServicesSlider(:common='common')
+    ServicesSlider
     SeoBlock
     SpecialistSlider
     BlogBlock

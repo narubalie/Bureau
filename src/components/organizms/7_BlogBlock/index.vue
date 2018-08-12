@@ -1,12 +1,14 @@
 <template lang='pug'>
-  el-main#blogBlock
-    el-row.block
-      Parallax
-        img(
-        width="100%"
-        display="block"
-        src="../../../assets/elements/DSC_8074.jpg"
-        )
+  el-main.bgImg
+    el-row
+      el-col(
+        :span="12"
+        :offset="6"
+      )
+        h2 Отзывы
+        h3 Очень приятные доктора и интерьер, сделали все качественно и без боли, очень рад, что нашел для себя Дентал Бюро!
+        p Семён Александрович | 10.04.2018
+        el-button Показать все отзывы
 </template>
 
 <script type="text/babel" src='./index.js'></script>

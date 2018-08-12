@@ -1,11 +1,5 @@
 export default {
   name: 'servicesSlider',
-  props: {
-    common: {
-      type: Array,
-      required: true
-    }
-  },
   data () {
     return {
       services: [{

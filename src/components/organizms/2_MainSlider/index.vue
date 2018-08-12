@@ -8,13 +8,13 @@
         )
         el-carousel-item(v-for='item in 4', :key='item')
           el-col.bannerText(
-            :span="6"
-            :offset="14"
+            :span="8"
+            :offset="2"
           )
-            span.plain
+            span
               h1 Добро пожаловать в&nbsp;Дентал Бюро!
-              p Александр Смирнов, главный врач “Дентал Бюро”, приглашает вас провести небольшую экскурсию!
-            el-button(type="primary") Записаться на расследование
+              p.plainText Александр Смирнов, главный врач “Дентал Бюро”, приглашает вас провести небольшую экскурсию!
+            el-button(type="default") Записаться на расследование
 </template>
 
 <script type="text/babel" src='./index.js'></script>

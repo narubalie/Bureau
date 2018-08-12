@@ -1,16 +1,16 @@
 <template lang='pug'>
   el-main#seoBlock
     el-row
-      parallax(
-      :parallax="true"
-      :sectionHeight="100"
-      :speedFactor="0.5"
+      el-col.bgImg(
+        :span="24"
       )
-        el-col(
-        :span="10"
-        :offset="7"
-        )
-          h2 Лечение зубов в Дентал Бюро
+    el-row
+      el-col(
+        :span="12"
+        :offset="6"
+      )
+        el-card
+          h3(slot="header") Лечение зубов в Дентал Бюро
           p
             | О центре медицинской косметологии «Эстетик Клуб»
             | на улице Уточкина можно сказать просто – «рядом
@@ -23,7 +23,6 @@
             type="primary"
           )
             span Записаться на приём
-        img(src="../../../assets/elements/DSC_7889.jpg")
 </template>
 
 <script type="text/babel" src='./index.js'></script>
