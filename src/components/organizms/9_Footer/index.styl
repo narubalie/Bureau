@@ -1,19 +1,47 @@
-@require '../../../assets/styles/config.styl'
 @require '../../../assets/styles/reset.styl'
+@require '../../../assets/styles/config.styl'
 
-a
-  color: $colors.primary
-  font-family: $fonts.plain
-  line-height: 19px;
-  font-size: 13px;
-  text-decoration-line: underline;
+h3
+  margin: 20px 0px
+  color: white
 
 .el-col
   text-align: left
 
-h2
-  font-family: $fonts.heading
-  font-weight: bold;
-  line-height: normal;
-  font-size: 16px;
-  text-align: left
+.el-footer
+  background: linear-gradient(0deg, #273845, #273845), url('../../../assets/elements/footer-bg.png');
+  background-blend-mode: multiply, normal;
+
+.block
+  padding: 50px 10% 50px 10%
+  width: 100vw
+  
+
+a
+  color: white
+  line-height: 25px;
+  display flex
+  opacity 0.3
+  &:hover
+    opacity: 1
+    color: $colors.secondary
+
+// .categories
+
+p
+  color: white
+  
+.cons
+  padding: 10px 0
+  font-size: 18px;
+  letter-spacing: 8.6px;
+  text-align: center
+  background-color: $colors.primary
+
+.copyrights
+  padding: 10px 10%
+  display flex
+  justify-content: space-between
+
+.inlineLink
+  display inline

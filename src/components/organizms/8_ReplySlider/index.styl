@@ -1,24 +1,32 @@
 @require '../../../assets/styles/config.styl'
 
-.el-row {
+.block {
   height: 75vh
   display: flex
   align-items: center
   justify-content: center
 }
 
-.el-carousel__item h3 {
-  color: #fff;
-  font-size: 14px;
-  opacity: 0.75;
-  line-height: 150px;
-  margin: 0;
-}
+.rightPhoto
+  overflow: hidden
+  height: 50vh
+  display flex
+  justify-content: center
 
-.el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
+.textBlock
+  padding-left: 20px
 
-.el-carousel__item:nth-child(2n+1) {
-  background-color: #d3dce6;
-}
+img
+  height: 100%
+
+h3
+  color: $colors.primary
+
+.doctor
+  background-color: #F1F7F7
+  border-radius: 4px
+
+
+.el-carousel__item
+  background-color: white
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);

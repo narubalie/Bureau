@@ -1,18 +1,23 @@
 <template lang='pug'>
-  el-footer
+  el-footer(height="100%  ")
     el-button
-    el-row
-      el-col(
+    el-row.block
+      el-col.categories(
       v-for='service in services'
       :key='service.id'
       :span="4"
       )
-        h2 {{ service.name }}
-        el-col.links(
-          v-for='item in service.data'
-          :key='item.id'
-          )
-            a {{ item.category }}
+        h3 {{ service.name }}
+        a(v-for='item in service.data'
+        :key='item.id'
+        ) {{ item.category }}
+    p.cons Имеются противопоказания. Проконсультируйтесь со специалистом. 16+
+    span.copyrights
+      p Дентал Бюро © 1997 - 2017
+      a Политика конфиденциальности
+      span
+        p.inlineLink Сделано
+        a.inlineLink Narubalie
 </template>
 
 <script type="text/babel" src='./index.js'></script>

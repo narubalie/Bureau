@@ -17,11 +17,15 @@
             v-for='article in articles'
             :key='article.id'
             )
-            el-card.doctor
-              img(:src='article.cover')
-              span.textBlock
-                h3 {{ article.name }}
+            el-row.doctor
+              el-col.rightPhoto(:span="3")
+                img(:src='article.photo')
+              el-col.textBlock(:span="8")
+                p {{ article.date }}
+                h3 {{ article.h3 }}
                 p {{ article.description }}
+                p {{ article.text }}
+        el-button Посмотреть все события
 </template>
 
 <script type="text/babel" src='./index.js'></script>
