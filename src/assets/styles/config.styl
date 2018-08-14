@@ -28,7 +28,7 @@ h1
   font-family: $fonts.heading
   color: $colors.primary
   text-align: left
-  margin 30px 30px 20px 30px
+  margin 30px 0
   font-weight: 700;
   font-size: 54px;
 
@@ -37,7 +37,7 @@ h2
   color: $colors.primary
   font-size: 60px
   font-weight: 400
-  margin: 20px 0
+  margin: 40px 0
   &:before
     display inline-block
     content: ''
@@ -65,8 +65,15 @@ h3
   line-height: normal;
   font-size: 30px;
   text-align: left
-  margin-top: 15px
-  margin-bottom: 15px 
+  margin: 15px 0
+
+a
+  font-family: $fonts.plain
+  line-height: 19px;
+  font-size: 13px;
+  cursor pointer
+  &:hover
+    color: $colors.secondary
 
 p
   font-family: $fonts.plain
@@ -74,18 +81,56 @@ p
   line-height: 20px;
   font-size: 14px;
 
-a
-  font-family: $fonts.plain
-  line-height: 19px;
-  font-size: 13px;
-  cursor pointer
-
-.plainText
-  margin 20px 30px 40px 30px
-  font-family: $fonts.plain
+li
   text-align: left
-  line-height: 30px;
-  font-size: 24px;
+  font-family: $fonts.plain
+  font-size: 14px;
+
+.el-button--default
+  padding: 16px 24px
+  border-radius: 100px
+  background-color: transparent
+  border: 1px solid $colors.secondary
+  font-family: $fonts.heading
+  color: $colors.primary
+  text-transform: uppercase
+  &:hover
+    background-color: $colors.primary
+    color: white
+    border: 1px solid $colors.primary
+
+.el-button--white
+  padding: 16px 24px
+  border-radius: 100px
+  background-color: transparent
+  border: 1px solid white
+  font-family: $fonts.heading
+  color: white
+  text-transform: uppercase
+  &:hover
+    background-color: $colors.primary
+    color: white
+    border: 1px solid $colors.primary
+
+.el-button--primary
+  display block
+  padding: 16px 24px
+  border-radius: 100px
+  margin-top: 20px
+  background-color: $colors.accident
+  border: none
+  font-family: $fonts.heading
+  color: $colors.primary
+  text-transform: uppercase
+  &:hover
+    background-color: $colors.primary
+    color: white
+
 
 .bgImg
   background-size: cover
+
+.el-card
+  box-shadow: 0px 15px 40px rgba(39, 56, 69, 0.2);
+  border-radius: 4px;
+  background-color: white

@@ -17,11 +17,13 @@
             v-for='doctor in doctors'
             :key='doctor.id'
             )
-            el-card.doctor
-              img(:src='doctor.cover')
-              span.textBlock
-                h3 {{ doctor.name }}
-                p {{ doctor.description }}
+            router-link(to='/Specialist')
+              el-card.doctor
+                img(:src='doctor.cover')
+                span
+                  h3 {{ doctor.name }}
+                  p {{ doctor.description }}
+    el-button(type='default') Показать всех специалистов
 </template>
 
 <script type="text/babel" src='./index.js'></script>

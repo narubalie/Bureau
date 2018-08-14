@@ -9,12 +9,13 @@
       @select="handleSelect")
       el-submenu(index="1")
         template(slot="title")
-          span.Burger.ic
-          span.Logo.ic
+          router-link(to='/')
+            span.Burger.ic
+            span.Logo.ic
         el-menu-item(index="1-1")
       el-submenu(index="2")
         template#navLinks(slot="title")
-          a Услуги
+          router-link(to='/Services') Услуги
         el-submenu(
           v-for='service in services'
           :key='service.id'
@@ -29,13 +30,13 @@
             )
             a {{ item.category }}
       el-menu-item(index="3")
-        router-link(to="Specialists")
+        router-link(to="/Specialists")
           a Специалисты
       el-menu-item(index="4")
-        router-link(to="Prices")
+        router-link(to="/Prices")
           a Цены
       el-menu-item(index="5")
-        router-link(to="Contacts")
+        router-link(to="/Contacts")
           a Контакты
       el-menu-item(index="6")
         i.el-icon-search

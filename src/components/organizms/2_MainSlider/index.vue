@@ -14,7 +14,7 @@
             span
               h1 Добро пожаловать в&nbsp;Дентал Бюро!
               p.plainText Александр Смирнов, главный врач “Дентал Бюро”, приглашает вас провести небольшую экскурсию!
-            el-button(type="default") Записаться на расследование
+              el-button(type="primary") Записаться на расследование
 </template>
 
 <script type="text/babel" src='./index.js'></script>

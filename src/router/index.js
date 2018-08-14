@@ -5,17 +5,25 @@ export default {
       name: 'main',
       component: resolve => require(['../components/views/mainpage.vue'], resolve)
     }, {
-      path: '/Servises',
-      name: 'Servises'
+      path: '/Services',
+      name: 'Services',
+      component: resolve => require(['../components/views/servicePage.vue'], resolve)
     }, {
       path: '/Specialists',
-      name: 'Specialists'
+      name: 'Specialists',
+      component: resolve => require(['../components/views/specialists.vue'], resolve)
+    }, {
+      path: '/Specialist',
+      name: 'Specialist',
+      component: resolve => require(['../components/views/specialist.vue'], resolve)
     }, {
       path: '/Prices',
-      name: 'Prices'
+      name: 'PricePage',
+      component: resolve => require(['../components/views/pricePage.vue'], resolve)
     }, {
       path: '/Contacts',
-      name: 'Contacts'
+      name: 'Contacts',
+      component: resolve => require(['../components/views/contacts.vue'], resolve)
     }
   ]
 }

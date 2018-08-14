@@ -6,7 +6,6 @@
     SpecialistSlider
     BlogBlock
     ReplySlider
-    Footer(:services='services')
 </template>
 
 <script>
@@ -19,20 +18,12 @@ export default {
     SeoBlock: resolve => require(['../organizms/5_SeoBlock/index.vue'], resolve),
     SpecialistSlider: resolve => require(['../organizms/6_SpecialistSlider/index.vue'], resolve),
     BlogBlock: resolve => require(['../organizms/7_BlogBlock/index.vue'], resolve),
-    ReplySlider: resolve => require(['../organizms/8_ReplySlider/index.vue'], resolve),
-    Footer: resolve => require(['../organizms/9_Footer/index.vue'], resolve)
+    ReplySlider: resolve => require(['../organizms/8_ReplySlider/index.vue'], resolve)
   },
   data () {
     return {}
   },
-  computed: {
-    services () {
-      return this.$store.state.services
-    },
-    common () {
-      return this.$store.state.services.filter(item => item.name === 'Общие')
-    }
-  }
+  computed: {}
 }
 </script>
 

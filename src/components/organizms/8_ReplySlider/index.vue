@@ -11,7 +11,7 @@
           type="card"
           :interval="8000"
           :autoplay="false"
-          height="50vh"
+          height="35vh"
           )
           el-carousel-item(
             v-for='article in articles'
