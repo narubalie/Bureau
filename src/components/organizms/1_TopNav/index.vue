@@ -17,16 +17,16 @@
         template#navLinks(slot="title")
           router-link(to='/Services') Услуги
         el-submenu(
-          v-for='service in services'
+          v-for='(service, index) in services'
           :key='service.id'
-          index="2-1"
+          :index='index'
           )
           template(slot="title")
             h3 {{ service.name }}
           el-menu-item.links(
-            v-for='item in service.data'
+            v-for='(item, subIndex) in service.data'
             :key='item.id'
-            index="2-1-1"
+            index=`2-${index}-${subIndex}`
             )
             a {{ item.category }}
       el-menu-item(index="3")

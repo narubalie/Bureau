@@ -15,11 +15,14 @@ import 'normalize.css/normalize.css'
 //   ymapMarker
 // } from 'vue-yandex-maps'
 
+import YmapPlugin from 'vue-yandex-maps'
+
 import App from './App'
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
 Vue.use(ElementUI)
+Vue.use(YmapPlugin)
 
 // Vue.use(YmapPlugin)
 // Vue.use(yandexMap)
