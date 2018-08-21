@@ -1,14 +1,15 @@
 export default {
   name: 'Имплантология',
   data: [
+    // {
+    //   isActive: true,
+    //   billedServices: [{
+    //     art: 'Т0001',
+    //     name: 'Осмотр после имплантации',
+    //     price: '500.00'
+    //   }]
+    // },
     {
-      isActive: true,
-      billedServices: [{
-        art: 'Т0001',
-        name: 'Осмотр после имплантации',
-        price: '500.00'
-      }]
-    }, {
       id: 34000,
       category: 'Операции',
       isActive: true,

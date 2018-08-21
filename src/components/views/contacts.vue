@@ -23,7 +23,7 @@ export default {
     background-color: #F1F7F7;
   }
   .el-row {
-    width: 74vw;
+    width: 100vw;
     margin: 0 auto
   }
   .el-main {

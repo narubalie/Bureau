@@ -15,7 +15,7 @@
         el-menu-item(index="1-1")
       el-submenu(index="2")
         template#navLinks(slot="title")
-          router-link(to='/Services') Услуги
+          a Услуги
         el-submenu(
           v-for='(service, index) in services'
           :key='service.id'
@@ -24,11 +24,10 @@
           template(slot="title")
             h3 {{ service.name }}
           el-menu-item.links(
-            v-for='(item, subIndex) in service.data'
+            v-for='item in service.data'
             :key='item.id'
-            index=`2-${index}-${subIndex}`
             )
-            a {{ item.category }}
+            router-link(to='/Services') {{ item.category }}
       el-menu-item(index="3")
         router-link(to="/Specialists")
           a Специалисты

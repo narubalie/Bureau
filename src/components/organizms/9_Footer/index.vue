@@ -1,11 +1,15 @@
 <template lang='pug'>
   el-footer(height="100%  ")
-    el-button
+    el-button.footerButton(type="primary") Записаться на приём
     el-row.block
       el-col.categories(
       v-for='service in services'
       :key='service.id'
-      :span="4"
+      :xs="22"
+      :sm="12"
+      :md="12"
+      :lg="8"
+      :xl="4"
       )
         h3 {{ service.name }}
         a(v-for='item in service.data'

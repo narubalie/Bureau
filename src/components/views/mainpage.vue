@@ -32,7 +32,6 @@ export default {
     flex-direction: column
   }
   .el-row {
-    width: 74vw;
     margin: 0 auto
   }
   .el-main {

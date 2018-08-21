@@ -8,8 +8,12 @@
         )
         el-carousel-item(v-for='item in 4', :key='item')
           el-col.bannerText(
-            :span="8"
-            :offset="2"
+            :xs="20"
+            :sm="12"
+            :md="8"
+            :lg="8"
+            :xl="4"
+            :offset="4"
           )
             span
               h1 Добро пожаловать в&nbsp;Дентал Бюро!

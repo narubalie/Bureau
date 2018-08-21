@@ -2,7 +2,11 @@
   el-main#servicesSlider
     el-row.block
       el-col(
-        :span="18"
+        :xs="22"
+        :sm="20"
+        :md="20"
+        :lg="16"
+        :xl="4"
       )
         h2 Услуги
         el-carousel(
