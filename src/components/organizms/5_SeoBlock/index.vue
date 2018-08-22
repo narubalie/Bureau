@@ -8,8 +8,8 @@
       el-col.seoCard(
         :xs="22"
         :sm="20"
-        :md="20"
-        :lg="16"
+        :md="16"
+        :lg="12"
         :xl="4"
       )
         el-card

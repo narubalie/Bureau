@@ -1,13 +1,14 @@
 @require '../../../assets/styles/config.styl'
 @require '../../../assets/styles/reset.styl'
 
+
+#topNav
+  background-color: $colors.primary
+
 .el-header
   z-index: 3
   position: fixed
   width 100%
-
-.el-menu-demo
-  display: flex
 
 .ic
   display: inline-block
@@ -34,6 +35,12 @@
   text-transform: none
   text-decoration: none
   padding: 10px
+
+.el-menu-demo
+  width: 90vw
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
 
 .links a
   color: white

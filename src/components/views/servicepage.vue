@@ -22,7 +22,7 @@ export default {
     flex-direction: column;
     background-color: #F1F7F7;
   }
-  .el-row {
+  .contentRow {
     width: 74vw;
     margin: 0 auto
   }
