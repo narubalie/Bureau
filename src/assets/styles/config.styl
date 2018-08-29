@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya:400,900|IBM+Plex+Serif:700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|IBM+Plex+Serif:700&subset=cyrillic');
+
+// global
 
 $fonts = {
   heading: 'IBM Plex Serif',
-  plain: 'Alegreya',
+  plain: 'Roboto Condensed',
 }
 
 $colors = {
@@ -23,6 +25,8 @@ $zIndex = {
   fixed: 20,
   modal: 30
 }
+
+// font: headings, links, lists, etc...
 
 h1
   font-family: $fonts.heading
@@ -66,6 +70,7 @@ h3
   font-size: 30px;
   text-align: left
   margin: 15px 0
+  padding: 0
 
 h4
   font-family: $fonts.plain
@@ -89,6 +94,8 @@ li
   text-align: left
   font-family: $fonts.plain
   font-size: 14px;
+
+// buttons
 
 .el-button--default
   padding: 16px 24px
@@ -130,6 +137,8 @@ li
     background-color: $colors.primary
     color: white
 
+
+// other styles
 
 .bgImg
   background-size: cover

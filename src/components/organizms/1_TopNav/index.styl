@@ -1,22 +1,54 @@
-@require '../../../assets/styles/config.styl'
 @require '../../../assets/styles/reset.styl'
+@require '../../../assets/styles/config.styl'
 
-
-#topNav
+.menu
   background-color: $colors.primary
-
-.el-header
-  z-index: 3
+  height: 100px
+  width: 100%
+  display: grid
+  align-items: center;
+  grid-template-columns: 3fr 7fr 2fr
+  padding: 0 10vw
   position: fixed
-  width 100%
+  z-index: 50
+  text-decoration: none
+ 
+.navLinks a
+    color: white
+    font-family: $fonts.plain
+    font-size: 24px
+    text-decoration: none
+    padding-right: 24px
 
-.ic
-  display: inline-block
-  height 36px
-  width: 36px
-  background no-repeat center url(../../../assets/elements/burger.svg)
-  background-size contain
-  margin-top: 5px
+.submenu
+  text-align: left
+  color: white
+  font-family: $fonts.heading
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 0
+  display: block
+  text-decoration: none
+
+.links
+  color: white
+  display: block
+  font-family: $fonts.plain
+  font-weight: normal;
+  font-size: 14px;
+  padding: 2px 0
+  text-align: left
+  text-decoration: none
+
+.search
+  display: flex
+  color: white
+  align-items: center
+
+.search i
+  padding-right: 8px
+
+// logo expand block
 
 .Logo
   display: inline-block
@@ -24,27 +56,16 @@
   height 40px
   background no-repeat center url(../../../assets/elements/NewFullLogo.svg)
   background-size contain
-  margin-left 16px
 
-.el-submenu a, .el-menu-item a
-  color: white
-  font-style: normal
-  font-weight: 400;
-  font-size: 20px
-  letter-spacing: 0.03em
-  text-transform: none
-  text-decoration: none
-  padding: 10px
+// services hover
 
-.el-menu-demo
-  width: 90vw
-  margin: 0 auto
-  display: flex
-  justify-content: space-between
-
-.links a
-  color: white
-  font-family: $fonts.plain
-  line-height: 19px;
-  font-size: 13px;
-  text-decoration-line: underline;
+.expand
+  width: 60vw
+  display: grid
+  grid-gap: 10px
+  grid-template-columns: repeat(3, 3fr)
+  grid-auto-flow: row
+  background-color: $colors.primary
+  position: fixed
+  z-index: 50
+  margin-top: 100px

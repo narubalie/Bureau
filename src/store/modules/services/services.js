@@ -4,7 +4,7 @@ import surgery from './3_surgery.js'
 import profHygiene from './4_profHygiene.js'
 import periodontics from './5_periodontics.js'
 import implantology from './6_implantology.js'
-import kids from './7_kids.js'
+// import kids from './7_kids.js'
 import orthopedics from './8_ortopedics.js'
 import orthodontics from './9_orthodontics.js'
 
@@ -17,7 +17,6 @@ export default {
     profHygiene,
     periodontics,
     implantology,
-    kids,
     orthopedics,
     orthodontics
   ]

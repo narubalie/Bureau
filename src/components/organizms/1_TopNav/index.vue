@@ -1,45 +1,19 @@
 <template lang='pug'>
-  el-header#topNav
-    el-menu.el-menu-demo(
-      :default-active="activeIndex"
-      active-text-color="#89b0ae"
-      background-color="#273845"
-      text-color="#ffffff"
-      mode="horizontal"
-      @select="handleSelect")
-      el-submenu(index="100")
-        template(slot="title")
-          router-link(to='/')
-            span.Burger.ic
-            span.Logo.ic
-        el-menu-item(index="1-1")
-      el-submenu(index="200")
-        template#navLinks(slot="title")
-          a Услуги
-        el-submenu(
-          v-for='(service, index) in services'
-          :key='service.id'
-          :index='index'
-          )
-          template(slot="title")
-            h3 {{ service.name }}
-          el-menu-item.links(
-            v-for='item in service.data'
-            :key='item.id'
-            )
-            router-link(to='/Services') {{ item.category }}
-      el-menu-item(index="300")
-        router-link(to="/Specialists")
-          a Специалисты
-      el-menu-item(index="400")
-        router-link(to="/Prices")
-          a Цены
-      el-menu-item(index="500")
-        router-link(to="/Contacts")
-          a Контакты
-      el-menu-item(index="600")
+  #topNav
+    .menu
+      router-link(to='/')
+        .Logo
+      .navLinks
+        router-link(to='/Services') Услуги
+        router-link(to="/Specialists") Специалисты
+        router-link(to="/Prices") Цены
+        router-link(to="/Contacts") Контакты
+      .search
         i.el-icon-search
-        input
+        input(placeholder="Поиск...")
+    .expand
+      router-link.submenu.row(to='/Services' v-for='service in services' :key='service.id') {{ service.name }}
+        router-link.links(to='/Services' v-for='item in service.data' :key='item.id') {{ item.category }}
 </template>
 
 <script type="text/babel" src='./index.js'></script>
