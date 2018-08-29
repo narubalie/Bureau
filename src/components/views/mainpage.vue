@@ -29,7 +29,8 @@ export default {
 
 <style lang="stylus">
   .el-container {
-    flex-direction: column
+    flex-direction: column;
+    background-color: #F1F7F7;
   }
   .el-row {
     margin: 0 auto

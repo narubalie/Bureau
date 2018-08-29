@@ -7,13 +7,13 @@
       text-color="#ffffff"
       mode="horizontal"
       @select="handleSelect")
-      el-submenu(index="1")
+      el-submenu(index="100")
         template(slot="title")
           router-link(to='/')
             span.Burger.ic
             span.Logo.ic
         el-menu-item(index="1-1")
-      el-submenu(index="2")
+      el-submenu(index="200")
         template#navLinks(slot="title")
           a Услуги
         el-submenu(
@@ -28,16 +28,16 @@
             :key='item.id'
             )
             router-link(to='/Services') {{ item.category }}
-      el-menu-item(index="3")
+      el-menu-item(index="300")
         router-link(to="/Specialists")
           a Специалисты
-      el-menu-item(index="4")
+      el-menu-item(index="400")
         router-link(to="/Prices")
           a Цены
-      el-menu-item(index="5")
+      el-menu-item(index="500")
         router-link(to="/Contacts")
           a Контакты
-      el-menu-item(index="6")
+      el-menu-item(index="600")
         i.el-icon-search
         input
 </template>

@@ -20,7 +20,7 @@ export default {
 <style lang="stylus">
   .el-container {
     flex-direction: column;
-    background-color: #F1F7F7;
+    background-color: white;
   }
   .el-row {
     width: 74vw;
