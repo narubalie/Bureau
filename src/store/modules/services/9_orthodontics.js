@@ -2,17 +2,40 @@ export default {
   name: 'Ортодонтия',
   data: [
     {
-      id: 37100,
-      name: 'Снятие зубных отложений с 1 зуба, имплантата',
-      price: '270.00'
+      id: 49000,
+      category: 'Диагностика',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png')
     }, {
-      id: 37200,
-      name: 'Медобработка 1 зубо-десневого кармана',
-      price: '270.00'
+      id: 51000,
+      category: 'Лечение с использованием съемной техники',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png')
     }, {
-      id: 37300,
-      name: 'Наложение лечебной повязки',
-      price: '270.00'
+      id: 52000,
+      category: 'Изготовление и установка съемных аппаратов',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png')
+    }, {
+      id: 53000,
+      category: 'Установка элементов',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png')
+    }, {
+      id: 54000,
+      category: 'Манипуляции',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png')
+    }, {
+      id: 55000,
+      category: 'Дополнительные работы',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png')
+    }, {
+      id: 56000,
+      category: 'Прочее',
+      isActive: true,
+      cover: require('../../../assets/elements/serviceCover-2.png')
     }
   ]
 }

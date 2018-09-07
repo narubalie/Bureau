@@ -26,15 +26,37 @@ $zIndex = {
   modal: 30
 }
 
+// grid
+
+.grid
+  display: grid
+  grid-template-columns: 130px 130px repeat(6, 1fr) 130px 130px
+
+.content
+  grid-column-start: 3
+  grid-column-end: 9
+  @media (min-width: 900px) and (max-width: 1200px)
+    grid-column-start: 2
+    grid-column-end: 7
+  @media (max-width: 900px)
+    grid-column-start: 1
+    grid-column-end: 8
+
+.carousel-content
+  grid-column-start: 4
+  grid-column-end: 8
+
+
 // font: headings, links, lists, etc...
 
 h1
   font-family: $fonts.heading
   color: $colors.primary
   text-align: left
-  margin 30px 0
   font-weight: 700;
   font-size: 54px;
+  margin-top: 16px
+  margin-bottom: 8px
 
 h2
   font-family: $fonts.heading
@@ -46,21 +68,21 @@ h2
     display inline-block
     content: ''
     background-image: url('../../../assets/elements/relief.svg')
-    background-size: 60px 60px;
-    height: 60px;
-    width: 60px;
+    background-size: contain
+    height: 40px;
+    width: 40px;
     opacity 0.5
-    margin-right: 30px
+    margin-right: 20px
   &:after
     display inline-block
     content: ''
     background-image: url('../../../assets/elements/relief.svg')
-    background-size: 60px 60px;
-    height: 60px;
-    width: 60px;
+    background-size: contain
+    height: 40px;
+    width: 40px;
     transform: rotate(180deg)
     opacity 0.5
-    margin-left: 30px
+    margin-left: 20px
 
 h3
   font-family: $fonts.heading
@@ -81,14 +103,12 @@ a
   line-height: 19px;
   font-size: 13px;
   cursor pointer
-  &:hover
-    color: $colors.secondary
 
 p
   font-family: $fonts.plain
   text-align: left
-  line-height: 20px;
-  font-size: 1em
+  line-height: 1.4em;
+  font-size: 1.2em
 
 li
   text-align: left
@@ -97,46 +117,76 @@ li
 
 // buttons
 
-.el-button--default
-  padding: 16px 24px
-  border-radius: 100px
+.default
+  position relative
+  margin-top: 24px
+  height 48px
+  padding: 0 24px 
   background-color: transparent
-  border: 1px solid $colors.secondary
+  border: 1px solid $colors.secondary 
+  border-radius: 24px
   font-family: $fonts.heading
   color: $colors.primary
   text-transform: uppercase
+  transition: .4s ease 0s
   &:hover
-    background-color: $colors.primary
-    color: white
-    border: 1px solid $colors.primary
+    border-color: $colors.primary
+    color: $colors.secondary
+    transform: translateY(-4px)
+    box-shadow: 0px 10px 10px rgba(39, 56, 69, 0.2);
 
-.el-button--white
-  padding: 16px 24px
-  border-radius: 100px
+
+.white
+  position relative
+  margin-top: 24px
+  height 48px
+  padding: 0 24px 
   background-color: transparent
   border: 1px solid white
+  border-radius: 24px
   font-family: $fonts.heading
   color: white
   text-transform: uppercase
+  transition: .4s ease 0s
   &:hover
     background-color: $colors.primary
-    color: white
     border: 1px solid $colors.primary
+    color: $colors.secondary
+    transform: translateY(-4px)
+    box-shadow: 0px 10px 10px rgba(39, 56, 69, 0.2);
 
-.el-button--primary
-  display block
-  padding: 16px 24px
-  border-radius: 100px
-  margin-top: 20px
-  background-color: $colors.accident
+.primary
+  position relative
+  height 48px
+  padding-left: 26px
+  margin-right: 22px
+  background-image: url('../../../assets/elements/btn-left-primary.svg')
+  background-color: transparent
+  background-size: cover
   border: none
+  border-radius: 0px
   font-family: $fonts.heading
   color: $colors.primary
   text-transform: uppercase
+  transition: .4s ease 0s
+  &:after
+    content: ''
+    display: block
+    position absolute
+    background-image: url('../../../assets/elements/btn-right-primary.svg')
+    background-size: cover
+    height: 48px;
+    width: 20px;
+    top 0
+    right: -20px
+    transition: .4s ease 0s
   &:hover
-    background-color: $colors.primary
-    color: white
-
+    color: $colors.primary
+    transform: translateY(-4px)
+    box-shadow: 0px 10px 10px rgba(39, 56, 69, 0.2);
+    background-image: url('../../../assets/elements/btn-left-hover.svg')
+    &:after
+      background-image: url('../../../assets/elements/btn-right-hover.svg')
 
 // other styles
 

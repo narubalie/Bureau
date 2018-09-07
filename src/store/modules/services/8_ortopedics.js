@@ -2,7 +2,7 @@ export default {
   name: 'Ортопедия',
   data: [
     {
-      id: 37000,
+      id: 43000,
       category: 'Лечение временных зубов',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-2.png'),
@@ -12,7 +12,7 @@ export default {
         price: '1850.00'
       }]
     }, {
-      id: 38000,
+      id: 44000,
       category: 'Лечение кариеса временных зубов в 1 посещение',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-2.png'),
@@ -23,7 +23,7 @@ export default {
         price: '100.00'
       }]
     }, {
-      id: 39000,
+      id: 45000,
       category: 'Лечение пульпита временных зубов в 3 посещения',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-2.png'),
@@ -33,7 +33,7 @@ export default {
         price: '100.00'
       }]
     }, {
-      id: 40000,
+      id: 46000,
       category: 'Прочее',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-2.png'),
@@ -43,7 +43,7 @@ export default {
         price: '100.00'
       }]
     }, {
-      id: 41000,
+      id: 47000,
       category: 'Удаление временного зуба',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-2.png'),
@@ -53,7 +53,7 @@ export default {
         price: '100.00'
       }]
     }, {
-      id: 42000,
+      id: 48000,
       category: 'Реминализирующая терапия',
       isActive: true,
       cover: require('../../../assets/elements/serviceCover-2.png'),

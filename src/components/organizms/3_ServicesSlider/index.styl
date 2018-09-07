@@ -1,37 +1,29 @@
 @require '../../../assets/styles/config.styl'
 
-.el-row
-  height: 100vh
-  display: flex
-  align-items: center
-  justify-content: center
+.grid
+  height: calc(100vh - 100px)
+  align-content: center;
 
-.el-carousel 
-  overflow: hidden
-  // margin-left: -20%
+// carousel styles
 
 .el-carousel__item 
   background-color: $colors.primary
   border-radius: 4px
-  display: flex
-  justify-content: center
   &:hover span
     opacity: 1
 
 .el-carousel__item img
-  height: 112%
+  object-fit: cover
+  width: 100%
+  height: 100%
 
-.el-carousel__item span
+.el-carousel__item .textBlock
   position: absolute
+  width: 100%
   bottom 0
   left 0
-  // background-blend-mode: overlay;
-  // backdrop-filter: contrast(40%);
   background: #273845;
   opacity: 0.9
-
-// .el-carousel__item.is-active
-//   width: 120%
 
 .el-carousel__item h3
   margin 40px 30px 16px 30px
