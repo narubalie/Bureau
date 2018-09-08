@@ -1,28 +1,44 @@
 @require '../../../assets/styles/config.styl'
 
-.el-row
-  margin-top: 10vh
-  margin-bottom: 10vh
+#doctors
+  margin-top: 100px
 
-.el-col
+.description
+  grid-column-start: 3
+  grid-column-end: 7
   padding: 20px
-
-span
   text-align: left
 
-span a
-  display block
-  font-size: 17px
-  height: 36px
+.vacant
+  grid-column-start: 7
+  grid-column-end: 9
+  padding: 20px 
+  .links > a
+    text-align: left
+    height: 24px
+    position relative
+  .links > a > h4
+    display: flex
+    justify-content: space-between
+    &:after
+      display inline-block
+      content: ''
+      background-image: url('../../../assets/elements/ic_picture_as_pdf.svg')
+      background-size: contain
+      height: 24px;
+      width: 24px;
+
 
 .icon
   display block
   text-align: left
-  margin-bottom: 12px
+  margin-bottom: 36px
   &:before
     display inline-block
     content: ''
     background-image: url('../../../assets/elements/ic_picture_as_pdf.svg')
-    background-size: 36px 36px;
-    height: 36px;
-    width: 36px;
+    background-size: contain
+    height: 24px;
+    width: 24px;
+    margin-right: 8px
+    transform: translateY(8px)

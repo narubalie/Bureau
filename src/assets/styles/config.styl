@@ -91,17 +91,18 @@ h3
   line-height: normal;
   font-size: 30px;
   text-align: left
-  margin: 15px 0
-  padding: 0
+  padding: 1em 0 0.5em 0
+  margin: 0
 
 h4
   font-family: $fonts.plain
-  font-weight: 400
+  font-weight: 700
+  text-align: left
 
 a
   font-family: $fonts.plain
   line-height: 19px;
-  font-size: 13px;
+  font-size: 1em
   cursor pointer
 
 p
@@ -109,11 +110,14 @@ p
   text-align: left
   line-height: 1.4em;
   font-size: 1.2em
+  margin: 0
+  padding: 0.5em 0
 
 li
   text-align: left
   font-family: $fonts.plain
-  font-size: 14px;
+  line-height: 1.4em;
+  font-size: 1.2em
 
 // buttons
 
@@ -182,8 +186,7 @@ li
     transition: .4s ease 0s
   &:hover
     color: $colors.primary
-    transform: translateY(-4px)
-    box-shadow: 0px 10px 10px rgba(39, 56, 69, 0.2);
+    transform: translateY(4px)
     background-image: url('../../../assets/elements/btn-left-hover.svg')
     &:after
       background-image: url('../../../assets/elements/btn-right-hover.svg')

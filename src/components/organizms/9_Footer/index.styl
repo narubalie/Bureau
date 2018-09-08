@@ -13,10 +13,9 @@ p, a
   position: absolute
   top: -24px
 
-
 #footer
-  background: linear-gradient(0deg, #273845, #273845), url('../../../assets/elements/footer-bg.png');
-  background-blend-mode: multiply, normal;
+  background: linear-gradient(0deg, rgba(39, 56, 69, 0.85), rgba(39, 56, 69, 0.85)), url('../../../assets/elements/DSC_8045.jpg');
+  background-size: cover
 
 .expand
   grid-row-start: 2
@@ -44,14 +43,14 @@ p, a
   display: block
   font-family: $fonts.plain
   font-weight: normal;
-  font-size: 15px;
+  font-size: 18px;
   padding: 4px 0
   line-height: 1.2
   text-align: left
   text-decoration: none
   opacity: 0.5
   &:first-child
-    padding-top: 10px
+    padding-top: 20px
   &:hover
     opacity: 1
     color: white
@@ -63,7 +62,11 @@ p, a
   font-size: 18px;
   letter-spacing: 8.6px;
   background-color: $colors.primary
+  p
+    text-align: center
 
 .copyrights
+  padding: 0 20px
   grid-row-start: 4
-  padding: 10px 10%
+  display: flex
+  justify-content: space-between

@@ -10,24 +10,24 @@
   text-decoration: none
   grid-template-rows: 100px calc(100vh - 100px)
 
-// logo
+// & logo hover expand block
+
+.logo
+  background no-repeat center url(../../../assets/elements/NewFullLogo.svg)
+  height: 100%
+  transition: 0.5s ease 0s
+  display: block
+  background-color: rgba(0, 0, 0, 0.1)
+  &:hover
+    background-color: rgba(0, 0, 0, 0.3)
 
 .logodown
   grid-column-start: 1
   grid-column-end: 3
   display: block
   justify-self: stretch
-
-.logo
-  background no-repeat center url(../../../assets/elements/NewFullLogo.svg)
-  background-color: rgba(0, 0, 0, 0.1)
-  background-size 180px
-  padding: 0 20px
-  transition: 0.5s ease 0s
-  &:hover
-    background-color: rgba(0, 0, 0, 0.3)
-
-// & logo hover expand block
+  &:hover .logoExpand
+    display block
 
 .logoExpand
   grid-column-start: 1
@@ -38,6 +38,8 @@
   &:hover .logo
     margin-top: 0
   display: none
+
+// logo inside block
 
 .logoNav a
   color: white
@@ -67,14 +69,14 @@
   grid-column-start: 3
   grid-column-end: 9
   justify-self: start
-  margin: auto 20px
-  padding: 24px 0
+  margin: auto 0px
   > a
+    height: 100%
     color: white
     font-family: $fonts.plain
     font-size: 24px
     text-decoration: none
-    padding-right: 24px
+    padding-left: 24px
     transition: 0.2s ease 0s
     &:hover
       color: $colors.secondary
@@ -92,7 +94,7 @@
     font-family: $fonts.plain
     font-size: 24px
     text-decoration: none
-    padding-right: 24px
+    padding-left: 24px
     transition: 0.2s ease 0s
     &:hover
       color: $colors.secondary
@@ -103,12 +105,10 @@
 
 .expand
   background-color: $colors.primary
-  min-width: 60%
+  // min-width: 60%
   z-index: 50
   padding: 10px
   padding-top: 40px
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr 1fr
   position: fixed
   display: none
   columns 3
@@ -140,7 +140,6 @@
     padding-top: 10px
   &:hover
     opacity: 1
-    color: white
 
 
 
