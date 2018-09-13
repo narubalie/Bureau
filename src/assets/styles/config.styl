@@ -31,6 +31,8 @@ $zIndex = {
 .grid
   display: grid
   grid-template-columns: 130px 130px repeat(6, 1fr) 130px 130px
+  @media (min-width: 900px) and (max-width: 1200px)
+    grid-template-columns: 50px 50px repeat(6, 1fr) 50px 50px
 
 .content
   grid-column-start: 3
@@ -91,13 +93,14 @@ h3
   line-height: normal;
   font-size: 30px;
   text-align: left
-  padding: 1em 0 0.5em 0
-  margin: 0
+  margin: 1em 0 0.5em 0
 
 h4
   font-family: $fonts.plain
   font-weight: 700
   text-align: left
+  line-height: normal;
+  margin: 1em 0 0.5em 0
 
 a
   font-family: $fonts.plain
@@ -110,8 +113,12 @@ p
   text-align: left
   line-height: 1.4em;
   font-size: 1.2em
-  margin: 0
-  padding: 0.5em 0
+  margin: 0.5em 0
+
+.smText
+  font-family: $fonts.plain
+  line-height: 1em;
+  font-size: 1em
 
 li
   text-align: left

@@ -3,7 +3,7 @@
     .content
       .doctor(v-for='doctor in doctors')
         img(:src='doctor.cover')
-        .textBlock
+        router-link.textBlock(to='/Specialist')
           h3 {{ doctor.name }}
           p {{ doctor.description }}
 </template>

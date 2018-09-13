@@ -1,6 +1,6 @@
 <template lang='pug'>
   #footer.grid
-    button.primary Записаться на приём
+    button.primary(@click="show = true") Записаться на приём
     .expand.content
       router-link.submenu(to='/Services' v-for='service in services' :key='service.id') {{ service.name }}
         router-link.links(to='/Services' v-for='item in service.data' :key='item.id') {{ item.category }}

@@ -1,6 +1,6 @@
 <template lang="pug">
-  #price
-    prices
+  #vacancies
+    vacancies
 </template>
 
 <script>
@@ -8,7 +8,7 @@
 export default {
   name: 'pricePage',
   components: {
-    prices: resolve => require(['../organizms/12_Prices/index.vue'], resolve)
+    vacancies: resolve => require(['../organizms/17_Vacancies/index.vue'], resolve)
   }
 }
 </script>

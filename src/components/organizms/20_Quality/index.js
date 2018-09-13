@@ -1,11 +1,7 @@
+
 export default {
-  name: 'id',
-  props: {
-    news: {
-      type: Array,
-      required: true
-    }
-  },
+  name: 'specialistsCards',
+  props: {},
   data () {
     return {}
   },

@@ -1,0 +1,41 @@
+@require '../../../assets/styles/config.styl'
+
+.head
+  grid-column-start: 3
+  grid-column-end: 7
+  margin-top: 10vh
+
+.content
+  margin-top: 5vh
+  margin-bottom: 10vh
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+.card
+  margin-left: 70px
+  position relative
+  margin-bottom: 30px
+  &:before
+    display block
+    content: ''
+    background-image: url('../../../assets/elements/reply-sm.svg')
+    background-size: contain
+    height: 200px;
+    width: 37px;
+    position: absolute
+    left: -70px
+  
+.reply
+  font-size: 24px
+
+.el-button
+  margin-top: 20px
+
+.date
+  opacity 0.5
+
+.name
+  font-size: 24px
+  font-weight: 700
+
+  

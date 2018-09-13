@@ -1,0 +1,39 @@
+@require '../../../assets/styles/config.styl'
+
+#modal
+  display: block
+  position: fixed
+  z-index: 100
+
+.bg
+  background-color: $colors.primary
+  opacity 0.9
+  width: 100vw
+  height: 100vh
+
+.form
+  width: 300px
+  text-align: left
+  position: fixed
+  left: calc(50% - 150px)
+  top: calc(50% - 150px)
+  background-color white
+  z-index: 101
+  border-radius: 4px
+  padding: 0 20px 20px 20px
+
+.primary
+  position: absolute
+  bottom: -80px
+  margin-left: 16px
+
+.close
+  position absolute
+  right: -30px
+  top: -30px
+  width: 24px
+  height: 24px
+  background-color: transparent
+  border: none
+  background-image: url(../../../assets/elements/close.svg)
+  background-size: contain

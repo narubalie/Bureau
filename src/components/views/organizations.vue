@@ -1,6 +1,6 @@
 <template lang="pug">
-  #service
-    prices
+  #Org
+    organizations
 </template>
 
 <script>
@@ -8,7 +8,7 @@
 export default {
   name: 'servicePage',
   components: {
-    prices: resolve => require(['../organizms/14_ServiceOne/index.vue'], resolve)
+    organizations: resolve => require(['../organizms/21_Organizations/index.vue'], resolve)
   }
 }
 </script>

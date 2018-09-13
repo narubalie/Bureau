@@ -18,7 +18,7 @@
           .textBlock
             h3 {{ service.category }}
             p {{ service.description }}
-      button.default Все услуги
+      //- button.default Все услуги
 </template>
 
 <script type="text/babel" src='./index.js'></script>

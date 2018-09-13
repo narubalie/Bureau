@@ -1,6 +1,7 @@
 <template lang='pug'>
-  #id.grid
+  #cards.grid
     .content
+      h3 Медицинские организации
 </template>
 
 <script type="text/babel" src='./index.js'></script>

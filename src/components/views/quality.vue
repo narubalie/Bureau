@@ -1,14 +1,14 @@
 <template lang="pug">
   #service
-    prices
+    textPage
 </template>
 
 <script>
 
 export default {
-  name: 'servicePage',
+  name: 'Quality',
   components: {
-    prices: resolve => require(['../organizms/14_ServiceOne/index.vue'], resolve)
+    textPage: resolve => require(['../organizms/20_Quality/index.vue'], resolve)
   }
 }
 </script>

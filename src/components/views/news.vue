@@ -1,18 +1,19 @@
 <template lang="pug">
-  #specialist
-    specialistOne
+  #news
+    newsCards
 </template>
 
 <script>
 
 export default {
-  name: 'Specialists',
+  name: 'news',
   components: {
-    specialistOne: resolve => require(['../organizms/15_SpecialistOne/index.vue'], resolve)
+    newsCards: resolve => require(['../organizms/18_News/index.vue'], resolve)
   }
 }
 </script>
+
 <style lang="stylus">
-  #specialist
+  #news
     background-color: rgba(244, 248, 247, 1)
 </style>

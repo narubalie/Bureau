@@ -1,18 +1,27 @@
 @require '../../../assets/styles/config.styl'
 
-.top
+.topText
+  grid-column-start: 3
+  grid-column-end: 5
   margin-top: 10vh
+  margin-bottom: 5vh
+
+.prices
+  grid-column-start: 3
+  grid-column-end: 6
   margin-bottom: 10vh
 
-.el-col
-  padding: 20px
+.priceText
+  display: grid
+  grid-template-columns: 3fr 1fr
 
 .bill p
   text-align: right
 
 .el-collapse-item
-  text-align: center
+  text-align: left
   font-family: $fonts.heading
   font-size: 16px;
   &:hover
     color: $colors.secondary
+

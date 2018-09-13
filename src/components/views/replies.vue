@@ -1,14 +1,14 @@
 <template lang="pug">
-  #price
-    prices
+  #replies
+    reps
 </template>
 
 <script>
 
 export default {
-  name: 'pricePage',
+  name: 'replies',
   components: {
-    prices: resolve => require(['../organizms/12_Prices/index.vue'], resolve)
+    reps: resolve => require(['../organizms/19_Replies/index.vue'], resolve)
   }
 }
 </script>

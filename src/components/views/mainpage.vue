@@ -1,5 +1,5 @@
 <template lang="pug">
-  el-container
+  #main
     MainSlider
     ServicesSlider
     SeoBlock
@@ -19,23 +19,11 @@ export default {
     SpecialistSlider: resolve => require(['../organizms/6_SpecialistSlider/index.vue'], resolve),
     BlogBlock: resolve => require(['../organizms/7_BlogBlock/index.vue'], resolve),
     ReplySlider: resolve => require(['../organizms/8_ReplySlider/index.vue'], resolve)
-  },
-  data () {
-    return {}
-  },
-  computed: {}
+  }
 }
 </script>
 
 <style lang="stylus">
-  .el-container {
-    flex-direction: column;
-    background-color: #F1F7F7;
-  }
-  .el-row {
-    margin: 0 auto
-  }
-  .el-main {
-    padding: 0
-  }
+  #main
+    background-color: rgba(244, 248, 247, 1)
 </style>
