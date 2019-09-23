@@ -1,5 +1,5 @@
 <template lang='pug'>
-  el-header#topNav
+  el-header
     el-menu.el-menu-demo(
       :default-active="activeIndex"
       active-text-color="#89b0ae"
@@ -7,37 +7,22 @@
       text-color="#ffffff"
       mode="horizontal"
       @select="handleSelect")
-      el-submenu(index="1")
+      el-menu-item(index="1")
         template(slot="title")
-          router-link(to='/')
-            span.Burger.ic
-            span.Logo.ic
-        el-menu-item(index="1-1")
+          router-link.Logo(to='/')
       el-submenu(index="2")
-        template#navLinks(slot="title")
-          router-link(to='/Services') Услуги
-        el-submenu(
+        template(slot="title")
+          router-link(to='/Services') Список
+        el-menu-item(
           v-for='service in services'
           :key='service.id'
           index="2-1"
           )
           template(slot="title")
             h3 {{ service.name }}
-          el-menu-item.links(
-            v-for='item in service.data'
-            :key='item.id'
-            index="2-1-1"
-            )
-            a {{ item.category }}
       el-menu-item(index="3")
-        router-link(to="/Specialists")
-          a Специалисты
-      el-menu-item(index="4")
-        router-link(to="/Prices")
-          a Цены
-      el-menu-item(index="5")
-        router-link(to="/Contacts")
-          a Контакты
+        router-link(to="/Ссылка")
+          a Ссылка
       el-menu-item(index="6")
         i.el-icon-search
         input

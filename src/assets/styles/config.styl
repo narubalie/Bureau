@@ -86,27 +86,30 @@ li
   font-family: $fonts.plain
   font-size: 14px;
 
-.el-button--default
+.el-button
   padding: 16px 24px
   border-radius: 100px
-  background-color: transparent
-  border: 1px solid $colors.secondary
-  font-family: $fonts.heading
-  color: $colors.primary
   text-transform: uppercase
   &:hover
     background-color: $colors.primary
     color: white
     border: 1px solid $colors.primary
 
+.el-button--default
+  background-color: transparent
+  border: 1px solid $colors.secondary
+  font-family: $fonts.heading
+  color: $colors.primary
+  &:hover
+    background-color: $colors.primary
+    color: white
+    border: 1px solid $colors.primary
+
 .el-button--white
-  padding: 16px 24px
-  border-radius: 100px
   background-color: transparent
   border: 1px solid white
   font-family: $fonts.heading
   color: white
-  text-transform: uppercase
   &:hover
     background-color: $colors.primary
     color: white
@@ -114,14 +117,11 @@ li
 
 .el-button--primary
   display block
-  padding: 16px 24px
-  border-radius: 100px
   margin-top: 20px
   background-color: $colors.accident
   border: none
   font-family: $fonts.heading
   color: $colors.primary
-  text-transform: uppercase
   &:hover
     background-color: $colors.primary
     color: white

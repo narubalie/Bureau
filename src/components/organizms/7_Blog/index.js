@@ -1,6 +1,6 @@
 
 export default {
-  name: 'blogBlock',
+  name: 'blog',
   data () {
     return {
       item: {

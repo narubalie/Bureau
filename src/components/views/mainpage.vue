@@ -1,11 +1,10 @@
 <template lang="pug">
   el-container
-    MainSlider
-    ServicesSlider
-    SeoBlock
-    SpecialistSlider
-    BlogBlock
-    ReplySlider
+    wideSlider
+    textBlock
+    slider
+    cards
+    wideBlock
 </template>
 
 <script>
@@ -13,12 +12,11 @@
 export default {
   name: 'Mainpage',
   components: {
-    MainSlider: resolve => require(['../organizms/2_MainSlider/index.vue'], resolve),
-    ServicesSlider: resolve => require(['../organizms/3_ServicesSlider/index.vue'], resolve),
-    SeoBlock: resolve => require(['../organizms/5_SeoBlock/index.vue'], resolve),
-    SpecialistSlider: resolve => require(['../organizms/6_SpecialistSlider/index.vue'], resolve),
-    BlogBlock: resolve => require(['../organizms/7_BlogBlock/index.vue'], resolve),
-    ReplySlider: resolve => require(['../organizms/8_ReplySlider/index.vue'], resolve)
+    wideSlider: resolve => require(['../organizms/2_wideSlider/index.vue'], resolve),
+    textBlock: resolve => require(['../organizms/3_TextBlock/index.vue'], resolve),
+    slider: resolve => require(['../organizms/4_Slider/index.vue'], resolve),
+    cards: resolve => require(['../organizms/5_Cards/index.vue'], resolve),
+    wideBlock: resolve => require(['../organizms/6_WideBlock/index.vue'], resolve)
   },
   data () {
     return {}

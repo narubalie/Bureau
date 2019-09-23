@@ -1,6 +1,6 @@
 
 export default {
-  name: 'yMap',
+  name: 'map',
   props: {},
   data () {
     return {

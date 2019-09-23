@@ -1,6 +1,6 @@
 
 export default {
-  name: 'specialistsCards',
+  name: 'cards',
   props: {},
   data () {
     return {

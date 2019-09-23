@@ -1,5 +1,5 @@
 export default {
-  name: 'servicesSlider',
+  name: 'slider',
   data () {
     return {
       services: [{

@@ -1,6 +1,6 @@
 
 export default {
-  name: 'specialistTop',
+  name: 'textBlock',
   props: {},
   computed: {},
   methods: {},

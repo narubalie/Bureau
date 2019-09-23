@@ -1,5 +1,5 @@
 export default {
-  name: 'mainSlider',
+  name: 'wideSlider',
   data () {
     return {
       item: {
